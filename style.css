@@ -528,6 +528,9 @@ section {
 .project-card p {
   font-size: 1.5rem;
 }
+.project-card:nth-child(n + 7) {
+  display: none;
+}
 
 /* Menambahkan pengaturan untuk tombol 'See All Project' */
 .see-all-btn-container {

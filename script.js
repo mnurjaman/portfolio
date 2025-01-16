@@ -179,3 +179,36 @@ function filterSelection(category) {
   });
   document.querySelector(`#myBtnContainer .btn[onclick*="${category}"]`).classList.add("active");
 }
+
+/// Function to show only 6 projects
+function showFirstSixProjects() {
+  const allProjects = document.querySelectorAll(".projects-box .project-card");
+  allProjects.forEach((project, index) => {
+    if (index < 6) {
+      project.style.display = "block";
+    } else {
+      project.style.display = "none";
+    }
+  });
+}
+
+// Filter functionality
+const filterButtons = document.querySelectorAll(".btn"); // Perbaikan di sini
+filterButtons.forEach((button) => {
+  button.addEventListener("click", function () {
+    const category = button.getAttribute("onclick").split("'")[1]; // Mendapatkan kategori dari onclick
+    const allProjects = document.querySelectorAll(".projects-box .project-card");
+
+    allProjects.forEach((project, index) => {
+      // Show only 6 items per filter
+      if (category === "all" || project.getAttribute("data-category") === category) {
+        project.style.display = index < 6 ? "block" : "none"; // Tampilkan hanya 6
+      } else {
+        project.style.display = "none";
+      }
+    });
+  });
+});
+
+// Initial setup to show only 6 projects on page load
+showFirstSixProjects();
