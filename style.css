@@ -179,17 +179,24 @@ section {
   gap: 1.5rem;
 }
 .btn {
-  display: inline-block;
-  padding: 1rem 3rem;
-  background-color: var(--main-color);
-  box-shadow: 0 0 25rem var(--main-color);
-  border-radius: 3rem;
-  font-size: 1.8rem;
-  color: black;
-  border: 2px solid transparent;
-  font-weight: 600;
-  transition: 0.3s ease-in-out;
+  display: flex; /* Menggunakan flexbox untuk konten tombol */
+  justify-content: center; /* Menyelaraskan teks ke tengah secara horizontal */
+  align-items: center; /* Menyelaraskan teks ke tengah secara vertikal */
+  padding: 1rem 2rem; /* Menyelaraskan padding tombol */
+  font-size: 1.5rem; /* Menetapkan ukuran font */
+  font-weight: 600; /* Berat font */
+  border-radius: 1rem; /* Menyediakan sudut yang membulat */
+  background-color: var(--main-color); /* Warna latar belakang tombol */
+  box-shadow: 0 0 25rem var(--main-color); /* Memberikan efek bayangan */
+  color: var(--bg-color); /* Warna teks */
+  text-align: center; /* Menyelaraskan teks secara horizontal */
+  cursor: pointer; /* Mengubah kursor menjadi pointer */
+  transition: 0.3s ease; /* Animasi transisi */
+  border: 2px solid transparent; /* Menghilangkan border */
+  margin-top: 2px; /* Memberikan jarak atas */
+  min-height: 50px; /* Menyediakan tinggi minimum agar tombol seragam */
 }
+
 .btn:hover {
   transform: scale(1.05);
   box-shadow: 0 0 25px var(--main-color), 0 0 25px var(--main-color), 0 0 25px var(--main-color);
@@ -453,9 +460,16 @@ section {
   color: black;
 }
 
-/* Styling untuk kontainer proyek */
+/* PROJECTS  */
 .projects {
   background-color: var(--bg-color);
+}
+#myBtnContainer {
+  display: flex; /* Mengatur layout menjadi fleksibel */
+  justify-content: center; /* Menyelaraskan tombol di tengah secara horizontal */
+  align-items: center; /* Menyelaraskan tombol secara vertikal jika diperlukan */
+  margin: 20px 0; /* Memberikan jarak atas dan bawah untuk estetika */
+  gap: 1.5rem;
 }
 
 /* Pengaturan grid untuk menata kartu proyek */
@@ -534,6 +548,7 @@ section {
   margin-top: 2px;
 }
 
+/* Contact Editted*/
 .contact {
   background-color: var(--second-bg-color);
 }
@@ -634,6 +649,11 @@ section {
   }
   .home-img img {
     width: 32vw;
+  }
+  .btn {
+    padding: 0.9rem 1.8rem; /* Mengurangi padding sedikit */
+    font-size: 1.4rem; /* Menyesuaikan ukuran font */
+    min-height: 45px; /* Sesuaikan tinggi tombol */
   }
   .about {
     flex-direction: column-reverse;

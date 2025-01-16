@@ -148,3 +148,34 @@ function sendEmail(fullName, email, phoneNumber, subject, message) {
     }
   );
 }
+
+// FILTER PROJECT
+// Fungsi untuk mengatur filter
+function filterSelection(category) {
+  const projects = document.querySelectorAll(".project-card");
+
+  if (category === "all") {
+    // Tampilkan semua proyek
+    projects.forEach((project) => {
+      project.style.display = "flex";
+    });
+  } else {
+    // Sembunyikan semua proyek
+    projects.forEach((project) => {
+      project.style.display = "none";
+    });
+    // Tampilkan hanya proyek dengan kategori yang dipilih
+    projects.forEach((project) => {
+      if (project.dataset.category === category) {
+        project.style.display = "flex";
+      }
+    });
+  }
+
+  // Update tombol aktif
+  const btns = document.querySelectorAll("#myBtnContainer .btn");
+  btns.forEach((btn) => {
+    btn.classList.remove("active");
+  });
+  document.querySelector(`#myBtnContainer .btn[onclick*="${category}"]`).classList.add("active");
+}
