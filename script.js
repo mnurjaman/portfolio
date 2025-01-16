@@ -212,3 +212,7 @@ filterButtons.forEach((button) => {
 
 // Initial setup to show only 6 projects on page load
 showFirstSixProjects();
+
+//
+
+//
