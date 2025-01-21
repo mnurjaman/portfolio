@@ -484,14 +484,14 @@
     <section class="projects" id="projects">
       <h2 class="heading">Projects</h2>
       <div id="myBtnContainer">
-        <a href="/projects.html" class="btn active" target="_blank"> Show all</a>
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
         <button class="btn" onclick="filterSelection('mobile')">Mobile</button>
         <button class="btn" onclick="filterSelection('web')">Website</button>
-        <button class="btn" onclick="filterSelection('data')"> Data Scientist</button>
-        <button class="btn" onclick="filterSelection('freelance')"> Freelance</button>
+        <button class="btn" onclick="filterSelection('data')">Data Scientist</button>
+        <button class="btn" onclick="filterSelection('freelance')">Freelance</button>
       </div>
-      <!--  -->
-      <div>
+      <div class="projects-box">
+        <!--  -->
         <div class="project-card" data-category="web">
           <img src="/Assets//projects/P1.jpg" alt="" />
           <h3>Urban Drainage Monitoring with GIS Technology</h3>
@@ -585,7 +585,7 @@
         <div class="project-card" data-category="data">
           <img src="/Assets/projects/P13.png" alt="" />
           <h3>Data Analysis & Report of Graduate User Satisfaction Report X</h3>
-          <a href="https://drive.google.com/drive/folders/16CjoolrwpuiVN-Ls7EyHOP8e6ZoHGztb?usp=sharing" class="btn" target="_blank" rel="noopener noreferrer">Review Projects</a>
+          <a href="https://github.com/mnurjaman/Data-Analysis-Report-of-Graduate-User-Satisfaction-Report-X" class="btn" target="_blank" rel="noopener noreferrer">Review Projects</a>
         </div>
         <!--  -->
         <div class="project-card" data-category="data">
@@ -599,7 +599,79 @@
           <h3>Event Promotion and Webinar Setup Coordinator for Informed Talk Series</h3>
           <a href="https://www.instagram.com/p/C4hFsJBS1BX/?img_index=1" class="btn" target="_blank" rel="noopener noreferrer">Review Projects</a>
         </div>
+
+        <!-- <div class="project-card" data-category="freelance">
+          <img src="/Assets/projects/P15.png" alt="" />
+          <h3>Event Promotion and Webinar Setup Coordinator for Informed Talk Series</h3>
+          <a href="https://www.instagram.com/p/C4hFsJBS1BX/?img_index=1" class="btn" target="_blank" rel="noopener noreferrer">Review Projects</a>
+        </div>
+
+        <div class="project-card" data-category="freelance">
+          <img src="/Assets/projects/P15.png" alt="" />
+          <h3>Event Promotion and Webinar Setup Coordinator for Informed Talk Series</h3>
+          <a href="https://www.instagram.com/p/C4hFsJBS1BX/?img_index=1" class="btn" target="_blank" rel="noopener noreferrer">Review Projects</a>
+        </div>
+
+        <div class="project-card" data-category="freelance">
+          <img src="/Assets/projects/P15.png" alt="" />
+          <h3>Event Promotion and Webinar Setup Coordinator for Informed Talk Series</h3>
+          <a href="https://www.instagram.com/p/C4hFsJBS1BX/?img_index=1" class="btn" target="_blank" rel="noopener noreferrer">Review Projects</a>
+        </div>
+
+        <div class="project-card" data-category="freelance">
+          <img src="/Assets/projects/P15.png" alt="" />
+          <h3>Event Promotion and Webinar Setup Coordinator for Informed Talk Series</h3>
+          <a href="https://www.instagram.com/p/C4hFsJBS1BX/?img_index=1" class="btn" target="_blank" rel="noopener noreferrer">Review Projects</a>
+        </div>
+
+        <div class="project-card" data-category="freelance">
+          <img src="/Assets/projects/P15.png" alt="" />
+          <h3>Event Promotion and Webinar Setup Coordinator for Informed Talk Series</h3>
+          <a href="https://www.instagram.com/p/C4hFsJBS1BX/?img_index=1" class="btn" target="_blank" rel="noopener noreferrer">Review Projects</a>
+        </div>
+
+        <div class="project-card" data-category="freelance">
+          <img src="/Assets/projects/P15.png" alt="" />
+          <h3>Event Promotion and Webinar Setup Coordinator for Informed Talk Series</h3>
+          <a href="https://www.instagram.com/p/C4hFsJBS1BX/?img_index=1" class="btn" target="_blank" rel="noopener noreferrer">Review Projects</a>
+        </div>
+
+        <div class="project-card" data-category="freelance">
+          <img src="/Assets/projects/P15.png" alt="" />
+          <h3>Event Promotion and Webinar Setup Coordinator for Informed Talk Series</h3>
+          <a href="https://www.instagram.com/p/C4hFsJBS1BX/?img_index=1" class="btn" target="_blank" rel="noopener noreferrer">Review Projects</a>
+        </div>
+
+        <div class="project-card" data-category="freelance">
+          <img src="/Assets/projects/P15.png" alt="" />
+          <h3>Event Promotion and Webinar Setup Coordinator for Informed Talk Series</h3>
+          <a href="https://www.instagram.com/p/C4hFsJBS1BX/?img_index=1" class="btn" target="_blank" rel="noopener noreferrer">Review Projects</a>
+        </div>
+
+        <div class="project-card" data-category="freelance">
+          <img src="/Assets/projects/P15.png" alt="" />
+          <h3>Event Promotion and Webinar Setup Coordinator for Informed Talk Series</h3>
+          <a href="https://www.instagram.com/p/C4hFsJBS1BX/?img_index=1" class="btn" target="_blank" rel="noopener noreferrer">Review Projects</a>
+        </div>
+
+        <div class="project-card" data-category="freelance">
+          <img src="/Assets/projects/P15.png" alt="" />
+          <h3>Event Promotion and Webinar Setup Coordinator for Informed Talk Series</h3>
+          <a href="https://www.instagram.com/p/C4hFsJBS1BX/?img_index=1" class="btn" target="_blank" rel="noopener noreferrer">Review Projects</a>
+        </div>
+
+        <div class="project-card" data-category="freelance">
+          <img src="/Assets/projects/P15.png" alt="" />
+          <h3>Event Promotion and Webinar Setup Coordinator for Informed Talk Series</h3>
+          <a href="https://www.instagram.com/p/C4hFsJBS1BX/?img_index=1" class="btn" target="_blank" rel="noopener noreferrer">Review Projects</a>
+        </div> -->
         
+        <!-- ADD PORTFOLIO COPY THIS-->
+        <!-- <div class="project-card" data-category="freelance">
+          <img src="/Assets/projects/404.png" alt="" />
+          <h3></h3>
+          <a href="https://github.com/mnurjaman/job_hunt_saw" class="btn" target="_blank" rel="noopener noreferrer">Review Projects</a>
+        </div> -->
       </div>
       <div class="see-all-btn-container">
         <a href="projects.html" class="btn" target="_blank">See All Project</a>
